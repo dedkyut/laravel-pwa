@@ -2,7 +2,23 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="manifest" href="manifest.json">
+		<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="PWA Laravel">
+		<meta name="apple-mobile-web-app-title" content="PWA Laravel">
+		<meta name="theme-color" content="#fde9e7">
+		<meta name="msapplication-navbutton-color" content="#fde9e7">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="msapplication-starturl" content="https://dedekyuti.xyz/pwa/public/">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="apple-touch-icon" href="favicon.ico">
 
         <title>Laravel</title>
 
@@ -128,5 +144,6 @@
                 </div>
             </div>
         </div>
+		<script src="{!! asset('assets/js/sw-controller.js') !!}"></script>
     </body>
 </html>
